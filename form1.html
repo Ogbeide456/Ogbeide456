@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            list-style: none;
+            position: relative;
+        }
+        input{
+            border: 1px solid;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <form action="/mailinglist.php" method="post">
+        <fieldset>
+            <legend>Join Our Email Listing</legend>
+            <p>Get news about the band such as tour dates and special MP3 
+                releases sent to your own in-box.</p>
+                <ol>
+                    <li>
+                        <label for="firstlast">Name:</label>
+                        <input type="text" name="fullname" id="firstlast">
+                    </li>
+                    <li><label for="email">Email:</label>
+                        <input type="text" name="email" id="email"></li>
+                </ol>
+            
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <textarea name="comment" rows="4" cols="45" placeholder="Leave us a comment."></textarea>
+
+<li><label>Favorite color: <input type="text" name="favcolor" 
+    value="Red" maxlength="50"></label></li>
+    <p><label>Official contest entry: <br>
+        <em>Tell us why you love the band. Five winners will get backstage 
+        passes!</em><br>
+        <textarea name="contest_entry" rows="5" cols="50">The band is totally 
+        awesome!</textarea></label></p>
+        <p><label>Official contest entry: <br>
+            <em>Tell us why you love the band. Five winners will get backstage 
+            passes!</em><br>
+            <textarea name="contest_entry" rows="5" cols="50">The band is totally 
+            awesome!</textarea></label></p>
+            <li><label for="form-pswd">Password:</label><br>
+                <input type="password" name="pswd" maxlength="12" id="form-pswd"></li>
+                <p>Education completed: <input type="text" list="edulevel"
+                    name="education">
+                    <datalist id="edulevel">
+                     <option value="High School">
+                     <option value="Bachelors Degree">
+                     <option value="Masters Degree">
+                     <option value="PhD">
+                    </datalist>    
+
+                    <h3>Black Goose Bistro |Pizza-on-Demand</h3>     <pre></pre>
+                    <p>Our 12&quot; wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+                    <legend>Your Information</legend>
+                    <ul> <li><label>Name:</label>
+                    <input type="text"></li>
+                <li><label>Address:</label>
+                    <input type="text"></li>
+                <li><label>Telephone Number:</label>
+                    <input type="tel"><li>
+                    <li><label>Email:</label>
+                    <input type="email"></li>
+                    <label>Delivery instructions:</label>
+                </ul>
+                    <textarea rows="5" cols="50"   placeholder="Limit characters and add placeholder text &quot;No more than 400 characters long&quot;"></textarea>
+                    <p><b>Design Your Dream Pizza:</b></p>
+                    <p>Pizza specs</p>                                        <pre></pre>
+                    <legend>Crust(Choose one)</legend>
+         <pre></pre> <p>( ) Classic white</p>
+         <pre></pre> <p>( ) Multigrain</p>
+         <pre></pre> <p>( ) Cheese-stuffed crust</p>
+         <pre></pre> <p>( ) Gluten-free</p>
+                    <legend>Toppings(Choose as many as you want):</legend>
+     <pre></pre> <p>[X] Red sauce</p>                  
+     <pre></pre> <p>[ ] White sauce</p>                  
+     <pre></pre> <p>[ ] Mozzarella Cheese</p>                  
+     <pre></pre> <p>[ ] Pepperoni</p>                  
+     <pre></pre> <p>[ ] Mushrooms</p>                  
+     <pre></pre> <p>[ ] Peppers</p>                
+     <pre></pre> <p>[ ] Anchovies</p> 
+     
+     <legend>Number</legend>
+     <p list>How many pizzas :</p>
+     <input type="text" list="noofpizzas"
+                    name="Pizzano">
+     <datalist id="noofpizzas">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+     </datalist>
+     <p></p>
+     <input type="submit" value="Bring me a pizza!">
+     <input type="reset" value="Reset">
+     <p>What type of music do you listen to?</p>
+     <ul>
+      <li><input type="checkbox" name="genre" value="punk" checked> Punk 
+     rock</li> 
+      <li><input type="checkbox" name="genre" value="indie" checked> Indie 
+     rock</li> 
+      <li><input type="checkbox" name="genre" value="hiphop"> Hip Hop</li> 
+      <li><input type="checkbox" name="genre" value="rockabilly"> 
+     Rockabilly</li>
+     </ul>
+     <input type="hidden" name="success-link" value="http://www.example.com/ 
+thankyou.html">
+<input type="datetime-local" name="name" value="2017-01-14T03:13:00">
+<label for="selfie">Selfie</label>
+<input type="file" accept="video/*, image/*" capture="environment">
+<label for="picture">Picture</label>
+<input type="file" accept="image/*" capture="environment" />
+
+<a href="https://www.youtube.com" download>link</a>
+
+
+</body>           
+</html>

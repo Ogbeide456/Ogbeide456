@@ -1,0 +1,4 @@
+.output { font-weight: bold; } /* Calculated values in bold */
+#payment { text-decoration: underline; } /* For element with id="payment" */
+#graph { border: solid black 1px; } /* Chart has a simple border */
+th, td { vertical-align: top; }

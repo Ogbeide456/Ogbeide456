@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ogbeide Samuel Ilerioluwakiye</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+       
+        <ul>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p><b>Welcome</b></p>
+        <h1>Hi, I'm <span>Ogbeide Samuel Ilerioluwakiye</span><br> and I'm a Front-End Developer from <span class="gh">Ni</span><span class="jh">ger</span><span class="gh">ia</span></h1>
+
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero reprehenderit beatae quae, modi temporibus ipsa commodi quos expedita fuga velit repellat quo reiciendis saepe distinctio porro quidem eveniet rem impedit.</p>
+          <div class="tab-titles">
+            <p class=" tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>Front-End Web Development<br><span>HTML, CSS, JavaScript and ReactJs</span><br></li>
+              <li>Data Analysis<br><span>Excel</span><br></li>
+              <li>Graphics Design<br><span>CorelDRAW</span><br></li>
+              <li>Prompt Engineering<br><span>ChatGPT</span><br></li>
+              <li>Problem Solving<br><span>Mathematics, Computer Science</span><br></li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>2022-2024<br><span>Web Design/Development</span><br></li>
+              <li>December 2023- March 2024<br><span>Prompt Engineering: Introduction to LLM's by OBTranslate</span><br></li>
+              
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>2022-2026<br><span>Currently studying Industrial Mathematics- Computer Science at Covenant University, Ota, Ogun State</span><br></li>
+              <li>2016-2022<br><span>Deeper Life High School, Lagos Campus, Mowe, Ogun State</span><br></li>
+              <li>2012-2016<br><span>Edidot School, Badore, Lagos</span><br></li>
+              
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div id="services">
+  <div class="container">
+    <h1 class="sub-title">Services</h1>
+    <div class="services-list">
+      <div>
+        <h2>Web Development/Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem, optio minus laborum recusandae at! Illo iusto vel est impedit nesciunt dolorem minima cum, suscipit itaque, harum debitis reprehenderit consequatur.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <div>
+        <h2>Graphics Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem, optio minus laborum recusandae at! Illo iusto vel est impedit nesciunt dolorem minima cum, suscipit itaque, harum debitis reprehenderit consequatur.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <div>
+        <h2>Problem Solving in Mathematics or Computer Science</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem, optio minus laborum recusandae at! Illo iusto vel est impedit nesciunt dolorem minima cum, suscipit itaque, harum debitis reprehenderit consequatur.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <div>
+        <h2>Data analysis with Microsoft Excel</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem, optio minus laborum recusandae at! Illo iusto vel est impedit nesciunt dolorem minima cum, suscipit itaque, harum debitis reprehenderit consequatur.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+      <div>
+        <h2>Advertisement</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem, optio minus laborum recusandae at! Illo iusto vel est impedit nesciunt dolorem minima cum, suscipit itaque, harum debitis reprehenderit consequatur.</p>
+        <a href="#">Learn more</a>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+ </div>
+  
+  <script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+    
+    
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+    
+    
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+   }
+    
+
+  </script>
+</body>
+</html>
